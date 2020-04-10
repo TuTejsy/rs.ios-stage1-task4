@@ -12,19 +12,6 @@
     
     NSInteger N = numberOfItems > [filteredArray count] ? [filteredArray count] : numberOfItems;
     
-//    NSArray *positiveNumbers = [array filteredArrayUsingPredicate:[NSPredicate predicateWithBlock:^BOOL(id number, NSDictionary *bindings) {
-//        return ([number intValue] >= 0);
-//    }]];
-//
-//    NSArray *negativeNumbers = [array filteredArrayUsingPredicate:[NSPredicate predicateWithBlock:^BOOL(id number, NSDictionary *bindings) {
-//        return ([number intValue] < 0);
-//    }]];
-//
-//    NSMutableArray<NSNumber*> *sortedNegativeArray = [[negativeNumbers sortedArrayUsingComparator:^NSComparisonResult(id left, id right) {
-//           return [left compare: right];
-//       }] mutableCopy];
-    
-    
     filteredArray = [filteredArray sortedArrayUsingComparator:^NSComparisonResult(id left, id right) {
         int first = abs([left intValue]);
         int second = abs([right intValue]);
