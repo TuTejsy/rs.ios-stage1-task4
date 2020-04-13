@@ -49,7 +49,7 @@
         }
         
         pos++;
-        if (pos == 5) {
+        if (pos == 4) {
             pos = 1;
             if (delta3 > delta2) {
                 delta3 = 0;
